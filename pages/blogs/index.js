@@ -75,8 +75,9 @@ const Blogs = ({ blogs, categories, tags, totalBlogs,blogsLimit,blogSkip,router 
             // ()
             return (
                 <article key={i}>
+                     <hr />
                     <Card blog={blog}/>
-                    <hr />
+                   
                 </article>
             );
         });
@@ -101,6 +102,7 @@ const Blogs = ({ blogs, categories, tags, totalBlogs,blogsLimit,blogSkip,router 
     const showLoadedBlogs = () => {
         return loadedBlogs.map((blog, i) => (
             <article key={i}>
+                <hr/>
                 <Card blog={blog} />
             </article>
         ));
@@ -112,9 +114,9 @@ const Blogs = ({ blogs, categories, tags, totalBlogs,blogsLimit,blogSkip,router 
             <main>
                 <div className="container-fluid">
                     <header>
-                        <div className="col-md-12 pt-3">
+                        {/* <div className="col-md-12 pt-3">
                             <h1 className="display-4 font-weight-bold text-center">Programming blogs and tutorials</h1>
-                        </div>
+                        </div> */}
                         <section>
                             <div className="pb-5 text-center">
                                 {showAllCategories()}

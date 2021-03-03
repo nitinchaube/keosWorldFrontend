@@ -29,7 +29,7 @@ const Card =({blog})=>{
     }
 
     return (
-        <div className="lead pb-4">
+        <div className="lead pb-4" style={{border:"solid 2px #007bff", margin:"4px",padding:"8px"}}>
             <header>
                 <Link href={`/blogs/${blog.slug}`}>
                     <a>

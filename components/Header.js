@@ -40,10 +40,10 @@ const Header = () => {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
-            <React.Fragment>
+            <React.Fragment >
               <NavItem>
                 <Link href="/blogs">
-                  <NavLink style={{ cursor: 'pointer' }}>Blogs</NavLink>
+                  <NavLink className="pr-3" style={{ cursor: 'pointer' }}><b>Blogs</b></NavLink>
                 </Link>
               </NavItem>
             </React.Fragment>
@@ -81,7 +81,7 @@ const Header = () => {
 
             {isAuth() && (
               <NavItem>
-                <NavLink style={{ cursor: 'pointer' }} onClick={() => signout(() => Router.replace(`/signin`))}>
+                <NavLink className="pr-4" style={{ cursor: 'pointer' }} onClick={() => signout(() => Router.replace(`/signin`))}>
                   Signout
                 </NavLink>
               </NavItem>
